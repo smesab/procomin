@@ -11,7 +11,12 @@
 body {
   background: #fff;
   color: #666666;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -495,7 +500,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #about {
   background: #fff;
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 #about .about-container .background {
@@ -522,7 +527,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container p {
-  line-height: 26px;
+  line-height: 1.7;
+  text-align: justify;
 }
 
 #about .about-container p:last-child {
@@ -812,12 +818,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #team {
   background: #fff;
-  padding: 80px 0 60px 0;
+  padding: 100px 0 80px 0;
 }
 
 #team .member {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#team .member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 #team .member .pic {
@@ -831,14 +847,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #team .member h4 {
   font-weight: 700;
-  margin-bottom: 2px;
+  margin-bottom: 10px;
   font-size: 18px;
 }
 
 #team .member span {
-  font-style: italic;
+  font-style: normal;
   display: block;
-  font-size: 13px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #666;
 }
 
 #team .member .social {
@@ -862,7 +880,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #contact {
   background: #f7f7f7;
-  padding: 80px 0 40px 0;
+  padding: 100px 0 60px 0;
 }
 
 #contact #google-map {
@@ -885,6 +903,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
   line-height: 22px;
   font-size: 14px;
+}
+
+#contact .info a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#contact .info a:hover {
+  color: #2dc997;
+  text-decoration: underline;
 }
 
 #contact .info .email p {
@@ -979,6 +1008,33 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .php-email-form button[type="submit"]:hover {
+  background: #51d8ad;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2dc997;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  font-weight: 500;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #51d8ad;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #2dc997;
+}
+
+.btn-primary:hover {
   background: #51d8ad;
 }
 
